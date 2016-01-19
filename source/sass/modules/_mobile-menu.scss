@@ -1,0 +1,100 @@
+.mobile-menu {
+    display: block;
+    padding:7rem 2rem 2rem 2rem;
+    position: fixed;
+    top:0;
+    left:100%;
+    right:0;
+    bottom:0;
+    z-index: 999999;
+    transition: 0.3s;
+
+    .mobile-menu--open & {
+        left:0;
+    }
+
+    @media (min-width: $screen-sm) {
+        padding:0;
+        position: relative;
+        display: inline-block;
+        left:auto;
+        right:auto;
+        top:auto;
+        bottom:auto;
+        float:right;
+    }
+
+    @media (max-width:$screen-sm) {
+        background-color: #fff;
+
+        a {
+            display: block;
+            margin:0;
+            padding:0;
+            width:100%;
+            line-height: 1.2;
+            margin-top:2rem;
+            font-size:1.8rem;
+            position: relative;
+            padding-left:2rem;
+            
+            &:before {
+                content: "\f054";
+                font-family: "icomoon";
+                position: absolute;
+                left:0;
+                font-size: 1.6rem;
+            }
+            &:first-child {
+                margin:0;
+            }
+        }
+
+        .navbar__menu__btn--action {
+            position: absolute;
+            bottom:2rem;
+            left: 2rem;
+            right:2rem;
+            width:auto;
+            border-top:0;
+        }
+    }
+}
+
+.mobile-menu-trigger {
+    position: absolute;
+    z-index: 999999;
+    right:2rem;
+    top:1.6rem;
+
+    span {
+       color:#fff;
+        padding:0.5rem 1rem;
+        border-radius: 0.5rem;
+        border:1px solid #fff;
+        font-size:1.4rem;
+    }
+    .icon-layers {
+        color:#fff;
+        position: absolute;
+        transition: 0.3s;
+        font-size:3rem;
+        .is-scrolled & {
+            color:#333;
+        }
+        transform-origin: center center;
+    }
+
+    .mobile-menu--open & {
+        span {
+            color:#333;
+            border-color:#333;
+        }
+        .icon-layers {
+            color:#333;
+            transform: scaleY(0.9);
+        }
+        .icon-close {
+        }
+    }
+}

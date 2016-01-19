@@ -1,0 +1,43 @@
+.lead-menu {
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:6rem;
+    background-color: rgba(0,0,0,0.6);
+    border-top: 1px solid rgba(240,240,240,0.6);
+    z-index: 4;
+}
+
+
+.angle-right {
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    width:50%;
+    background-color: rgba(240,240,240,0.05);
+    transform: rotate(145deg) translate(75%,0);
+
+    &:after {
+        content:"";
+        top:0;
+    }
+    //transform: rotate(-45deg);
+}
+
+.angle-left {
+    position: absolute;
+    right:0;
+    bottom:0;
+    top:0;
+    width:50%;
+    background-color: rgba(240,240,240,0.05);
+    transform: rotate(-145deg) translate(-75%,0);
+
+
+    &:after {
+        content:"";
+        top:0;
+    }
+}

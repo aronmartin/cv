@@ -1,0 +1,46 @@
+extends layout/main
+append variables
+    - var title = 'Maas Culinair';
+    - var bodyClass = 'body--home';
+
+append content
+
+    include modules/lead
+
+
+    //section#verder
+    //    .container
+    //        .row
+    //            .col-sm-6.col-md-6
+    //
+    //                include modules/carousel
+    //
+    //            .col-sm-6.col-md-6
+    //                h2.lead__bottom__title Let's get cooking!
+    //                ul.lead__bottom__list
+    //                    li.lead__bottom__list__item Meer dan 18 jaar ervaring
+    //                    li.lead__bottom__list__item Geen arbeidscontracten
+    //                    li.lead__bottom__list__item Geen sociale lasten/loonbelasting
+    //                    li.lead__bottom__list__item Alleen betaling van de werkelijk gewerkte uren
+    //                    li.lead__bottom__list__item Geen (loon)administratie
+    //
+    //                a(href="#").btn.btn--rounded--secondary.form-modal-trigger Afspraak maken
+
+    .page-content
+        .container
+            .row
+                .text-block.col-md-6
+                    h2.text-block__title Wie is Maas Culinair?
+                    p.text-block__content Als freelancer met meer dan 18 jaar ervaring in diverse horecabedrijven is Roland in staat om op verschillende niveaus te functioneren, en zich aan te passen aan de specifieke eisen van uw bedrijf. Door deze ruime ervaring heeft hij door de jaren heen een groot netwerk opgebouwd waardoor het ook mogelijk is om naast zichzelf diverse ervaren freelance koks te detacheren.
+
+
+                .text-block.col-md-6
+                    h2.text-block__title Wat doen we?
+                    p.text-block__content U kunt ervaren freelance koks inzetten als vervanger van uw vaste keukenpersoneel tijdens de vakantieperiode, bij uitval door ziekte of andere omstandigheden, op drukke dagen om de werkdruk te verlagen of bijvoorbeeld om het personeelsverloop in uw organisatie beter op te vangen.
+
+
+    include modules/footer
+    include modules/form-modal
+    include modules/video-modal
+
+
