@@ -48,6 +48,11 @@ body {
     &.form-modal--open, &.video-modal--open, &.mobile-menu--open {
         overflow: hidden;
     }
+    @media (min-width: $screen-sm){
+        &.mobile-menu--open {
+            overflow: auto;
+        }
+    }
 }
 
 
@@ -57,11 +62,12 @@ body {
     height: auto;
     position:relative;
     overflow-x: hidden;
+    z-index: 1;
+    transition: top 0.4s;
+
+
     @media (min-width: $screen-sm) {
         overflow: visible;
-    }
-
-    @media (min-width: $screen-md) {
     }
 }
 
@@ -83,4 +89,9 @@ body {
 }
 
 
+
 img {max-width:100%;}
+
+.image--rounded {
+    border-radius:50%;
+}

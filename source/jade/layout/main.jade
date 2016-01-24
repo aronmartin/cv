@@ -21,7 +21,10 @@ head
     meta(name="author" content="Roland Maas")
     link( href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,400italic' rel='stylesheet' type='text/css' )
     link(rel="icon", href="favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="https://i.icomoon.io/public/temp/427d8a7a0c/aron/style.css")
 
+    script(src="https://use.typekit.net/ubt7aeo.js")
+    script try {Typekit.load({async: true});} catch (e) {}
 
     //- Append stylesheets
     link( href=css_path + "/app.css", rel="stylesheet", type="text/css" )
@@ -33,6 +36,8 @@ head
             include ../modules/navbar
 
             block content
+
+
 
         script( src=js_path + "/all.js" )
 

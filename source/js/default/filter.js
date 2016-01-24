@@ -2,6 +2,8 @@
     'use strict';
 
 
+
+
     $(".filter__selected").on("click", function(e){
         e.preventDefault();
         $(".filter").removeClass("is-expanded");
@@ -35,5 +37,16 @@
     });
 
     changeLink();
+
+    $(document).mouseup(function (e)
+    {
+        var container = $(".filter__selected");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $(".filter").removeClass("is-expanded");
+        }
+    });
 
 })();

@@ -3,6 +3,7 @@ append variables
     - var title = 'Maas Culinair';
     - var bodyClass = 'body--home';
 
+
 append content
 
     include modules/lead
@@ -11,20 +12,32 @@ append content
     .page-content
         .container
             .row
-                .text-block.col-md-6
-                    h2.text-block__title Wie is Maas Culinair?
-                    p.text-block__content Als freelancer met meer dan 18 jaar ervaring in diverse horecabedrijven is Roland in staat om op verschillende niveaus te functioneren, en zich aan te passen aan de specifieke eisen van uw bedrijf. Door deze ruime ervaring heeft hij door de jaren heen een groot netwerk opgebouwd waardoor het ook mogelijk is om naast zichzelf diverse ervaren freelance koks te detacheren.
+                .text-block.col-sm-4.pull-right
+                    h2.text-block__title.hidden-xs &nbsp
+                    .row
+                        img.image--rounded.col-xs-6.col-sm-12(src="asset/image/presentatie.jpg" alt="presentatie osage")
+                .text-block.col-sm-8
+                    h2.text-block__title Wie ben ik ook alweer?
+                    p.text-block__content Mijn naam is #[a(href="https://www.linkedin.com/in/aron-martin-3b528a86" target="_blank") Aron Martin] en ik woon in Rotterdam. Ik heb in het verleden mogen kennismaken met TamTam als stagair. Momenteel ben ik werkzaam als een zeer gedreven front-end developer bij #[a(href="http://osage.nl" target="_blank") Osage]. Naast mijn baan houd ik mijzelf als zzp’er bezig met het ontwerpen en het realiseren van websites voor mijn eigen klanten.
+                    p.text-block__content Gedurende mijn werk en in mijn vrije tijd vind ik het leuk om innovatieve oplossingen en concepten te bedenken, te ontwerpen en te realiseren. Ik vind het hele proces interessant en belangrijk. Ik geloof niet in hokjes en ik ben van mening dat tegenwoordig veel disciplines elkaar overlappen. Ik ben ervan overtuigd dat als een developer zich verdiept en mengt in de concept- en ontwerpfase dit resulteert in een beter eindproduct. Tevens draagt dit bij aan de ontwikkeling en de verruiming van het blikveld van de developer.
+
+        include modules/portfolio
 
 
-                .text-block.col-md-6
-                    h2.text-block__title Wat doen we?
-                    p.text-block__content U kunt ervaren freelance koks inzetten als vervanger van uw vaste keukenpersoneel tijdens de vakantieperiode, bij uitval door ziekte of andere omstandigheden, op drukke dagen om de werkdruk te verlagen of bijvoorbeeld om het personeelsverloop in uw organisatie beter op te vangen.
+        .container
+            .row
+                .text-block.col-sm-4.pull-right
+                    h2.text-block__title.hidden-xs &nbsp
+                    .row
+                        img.image--rounded.col-xs-6.col-sm-12(src="asset/image/presentatie.jpg" alt="presentatie osage")
+                .text-block.col-sm-8
+                    h2.text-block__title Wie ben ik ook alweer?
+                    p.text-block__content Mijn naam is #[a(href="https://www.linkedin.com/in/aron-martin-3b528a86" target="_blank") Aron Martin] en ik woon in Rotterdam. Ik heb in het verleden mogen kennismaken met TamTam als stagair. Momenteel ben ik werkzaam als een zeer gedreven front-end developer bij #[a(href="http://osage.nl" target="_blank") Osage]. Naast mijn baan houd ik mijzelf als zzp’er bezig met het ontwerpen en het realiseren van websites voor mijn eigen klanten.
+                    p.text-block__content Gedurende mijn werk en in mijn vrije tijd vind ik het leuk om innovatieve oplossingen en concepten te bedenken, te ontwerpen en te realiseren. Ik vind het hele proces interessant en belangrijk. Ik geloof niet in hokjes en ik ben van mening dat tegenwoordig veel disciplines elkaar overlappen. Ik ben ervan overtuigd dat als een developer zich verdiept en mengt in de concept- en ontwerpfase dit resulteert in een beter eindproduct. Tevens draagt dit bij aan de ontwikkeling en de verruiming van het blikveld van de developer.
 
-
+                    
     include modules/footer
     include modules/form-modal
     include modules/video-modal
 
 
-    script(src="https://use.typekit.net/ubt7aeo.js")
-    script try{Typekit.load({ async: true });}catch(e){}

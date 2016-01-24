@@ -19,10 +19,12 @@ $color-grey--darkest:           #fff;
 //BASE COLORS
 
 
-$color-primary:                 #5fc7ae;
+$color-primary:                 #ff5454;
+$color-primary--90:             rgba(255, 84, 84, 0.95);
 $color-secondary:               #333;
 $color-secondary--03:           #B8C3CB;
 $color-tertiary:                #00689b;
+$color-quad:                    #333659;
 $color-accent:                  #ccc;
 $color-font:                    #1a171b;
 $color-font--alt:               #138081;
@@ -36,6 +38,7 @@ $color-background--alt-3:       rgba(150, 150, 150, 0.15);
 // -------------------------------
 
 $font-primary:             "Roboto", sans-serif;
+$font-secondary:            "canada-type-gibson", sans-serif;
 
 $font-family-base:                $font-primary;
 $font-size-base:                  2rem;
@@ -107,43 +110,3 @@ $lift-barely:                     1;
 $lift-full:                       99999;
 
 
-// Icons
-// -------------------------------
-
-$font-family-icons: "icomoon";
-$icon-home: "\e600";
-$icon-menu-alt: "\e601";
-$icon-zoeken: "\e602";
-$icon-linked-in: "\e603";
-$icon-facebook: "\e604";
-$icon-twitter: "\e605";
-$icon-informatie: "\e606";
-$icon-vraag: "\e607";
-$icon-min: "\e608";
-$icon-pijl-links: "\e609";
-$icon-lees-meer-link: "\e60a";
-$icon-pijl-rechts-cirkel: "\e60b";
-$icon-play-knop: "\e60c";
-$icon-plus: "\e60d";
-$icon-pijl-terug: "\e60e";
-$icon-spraak-wolk-leeg: "\e60f";
-$icon-vraag-antwoord: "\e610";
-$icon-dialoog-wolk: "\e611";
-$icon-close-backdrop: "\e622";
-$icon-information: "\e623";
-$icon-chevron-down: "\e61e";
-$icon-chevron-left: "\e61f";
-$icon-chevron-right: "\e620";
-$icon-chevron-up: "\e621";
-$icon-arrow-left: "\e61a";
-$icon-arrow-right: "\e61b";
-$icon-arrow-up: "\e61c";
-$icon-required: "\e612";
-$icon-vertical-divider: "\e613";
-$icon-double-chevron: "\e614";
-$icon-search: "\e615";
-$icon-chevron: "\e616";
-$icon-arrow-thin: "\e617";
-$icon-close: "\e618";
-$icon-checkmark: "\e619";
-$icon-arrow-down: "\e61d";

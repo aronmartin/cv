@@ -106,7 +106,7 @@
     $(window).scroll(function () {
 
         //if I scroll more than 50px...
-        if ($(window).scrollTop() > 10) {
+        if ($(window).scrollTop() > 1) {
             $(".navbar").addClass("is-scrolled");
         } else {
             if ($(".navbar").hasClass("is-scrolled")) {
@@ -189,4 +189,19 @@
             $('#submit').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
         }
     });
+
+    $(".test").on("click", function(e){
+        e.preventDefault();
+
+        $("body").toggleClass("portfolio--open");
+
+    })
+
+
+
+
+
+
+
+
 })();

@@ -1,5 +1,4 @@
 .btn-search {
-    background-color: transparent;
     border:1px solid rgba(240,240,240,0.6);
     padding:0.5rem 2.2rem 0.5rem 4.2rem;
     display: inline-block;
@@ -9,25 +8,22 @@
     transition: all 0.3s ease-in-out;
     font-size: 1.8rem;
     border-radius: 0.5rem;
-    opacity: 0;
-    visibility: hidden;
     position: relative;
     margin-top:1rem;
+    background-color: $color-primary--90;
+
     &:hover {
-        background-color: $color-font--alt;
+        background-color: white;
+        color:#333;
     }
     span {
         position: absolute;
         top:50%;
-        left: 1.5rem;
+        left: 1.3rem;
         transform: translate(0,-55%);
     }
 
     @media (max-width: $screen-sm){
-        margin-top:1rem;
-    }
-    &.open {
-        visibility: visible;
-        opacity: 1;
+        margin-top:0.5rem;
     }
 }
