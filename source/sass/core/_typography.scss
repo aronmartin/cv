@@ -54,6 +54,7 @@ p {
         text-decoration: none;
         color:$color-tertiary;
         transition: color 0.2s;
+        font-weight: 400;
         &:hover {
             color:$color-primary;
         }
@@ -65,6 +66,16 @@ p {
 ul, ol {
     margin-left: 19px;
     margin-bottom: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color:$color-quad;
+    transition: color 0.2s;
+    font-weight: 100;
+    &:hover {
+        color:$color-primary;
+    }
 }
 
 

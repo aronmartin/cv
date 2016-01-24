@@ -7,10 +7,13 @@
 
     $mobileMenuTrigger.on("click", function(e){
         e.preventDefault();
-
         $body.toggleClass("mobile-menu--open");
+    });
 
-    })
+    $(".navbar__menu__btn").on("click", function(){
+        $body.removeClass("mobile-menu--open");
+    });
+
 
 
 })();

@@ -11,6 +11,9 @@
   transition: all 0.3s ease-in-out;
   min-height: 6rem;
   box-shadow: $box-shadow-big;
+  @media (max-width: $screen-sm){
+    background-color: #fff;
+  }
 
   @media (min-width: $screen-sm) {
     position: fixed;
@@ -90,7 +93,7 @@
 }
 
 .navbar__menu {
-  @extend .row;
+  @include clearfix();
 }
 
 .navbar__menu__btn {

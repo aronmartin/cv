@@ -39,6 +39,7 @@
             margin:0;
             font-weight: 100;
             font-size:1.6rem;
+            line-height: 1.5;
         }
     }
 
@@ -55,42 +56,50 @@
         backface-visibility: hidden;
 
         &:before {
-            top:0;
-            left:0;
-            right:0;
+            top: 0;
+            left: 0;
+            right: 0;
             backface-visibility: hidden;
-            border-radius:10px;
-            bottom:0;
+            border-radius: 10px;
             content: "";
+            bottom:0;
+            background-color: #fff;
             position: absolute;
-            background-image:url("../image/background/background-2.png");
-            background-size:200%;
-            opacity:0.93;
+            background-image: url("../image/background/background-2.png");
+            background-size: 200%;
+            opacity: 0.93;
             transition: opacity 0.3s;
-
         }
         h5 {
             position: relative;
             z-index: 3;
             backface-visibility: hidden;
             transition: opacity 0.3s;
-
+            display: block;
         }
-        &:hover {
+
+        @media (min-width: $screen-sm){
+            &:hover {
+                &:before {
+                    opacity:0;
+                }
+                h5 {
+                    opacity:0;
+                }
+            }
+        }
+        @media (max-width: $screen-xs-max){
+            h5 {display: none}
             &:before {
-                opacity:0;
-            }
-            h5 {
-                opacity:0;
-
+                display: none;
             }
         }
-
-
     }
     .back {
         backface-visibility: hidden;
         height:auto;
+        z-index: 5;
+        position: relative;
         min-height:23rem;
         transform: rotateY( 180deg );
         background-color:$color-secondary;
