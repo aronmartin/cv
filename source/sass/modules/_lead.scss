@@ -55,6 +55,13 @@
   font-family: $font-primary;
   span {
     font-weight: 600;
+    @include tada(
+    $duration: 1s,
+    $count: 1,
+    $delay: .2s,
+    $function: ease,
+    $fill: both
+    );
   }
 
   @media (min-width: $screen-sm) {

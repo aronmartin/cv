@@ -9,6 +9,7 @@
 
 // Import core
 @import "core/font";
+@import "core/animate/animate";
 @import "core/icons";
 @import "core/variables";
 @import "core/reset";
@@ -16,7 +17,6 @@
 @import "core/typography";
 @import "core/links";
 @import "core/btn";
-@import "core/animate/animate";
 
 // Include Helpers SCSS
 @import "helpers/mixins";

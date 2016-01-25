@@ -72,6 +72,7 @@
     @media (max-width: $screen-sm){
         display: inline-block;
         margin-top:0;
+        padding: 1rem 2.2rem;
     }
 
 
@@ -132,5 +133,8 @@
 
     &.is-selected {
         background-color: #DBDBDB;
+    }
+    @media (max-width: $screen-sm){
+        padding:0.6rem 1.4rem;
     }
 }
